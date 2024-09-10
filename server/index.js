@@ -20,11 +20,11 @@ app.use(
 
 //default route
 app.get("/", (req,res) => {
-    res.json({"users" : ["1","2","3"]})
+    res.send("<h1>This is Homepage</h1>")
 })
 
 app.get("/contact", (req,res) => {
-    res.send("<h1>THis is contact page</h1>")
+    res.send("<h1>This is contact page</h1>")
 })
 
 
