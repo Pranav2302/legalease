@@ -3,9 +3,13 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const database = require("./config/database");
 
 dotenv.config();
 const PORT = process.env.PORT || 4000;
+
+// db connection
+database.connect();
 
 //middlewares
 app.use(express.json());
