@@ -2,6 +2,7 @@
 
 /server/.env
 
+
 # dependencies
 /node_modules
 /server/node_modules/
